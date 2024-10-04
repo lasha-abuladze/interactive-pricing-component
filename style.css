@@ -111,3 +111,80 @@ form {
         transform: translateY(-50%);
         z-index: -1;
         border-radius: 25px; }
+  form .billing {
+    width: calc(100% + 48px);
+    transform: translateX(-24px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ECF0FB; }
+    form .billing .billing-btn--div {
+      width: 43px;
+      height: 22px;
+      border-radius: 33px;
+      background-color: #CFD8EF;
+      position: relative; }
+      form .billing .billing-btn--div .billing-btn {
+        width: 14px;
+        height: 14px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 3px;
+        transition: all 0.2s; }
+      form .billing .billing-btn--div .active {
+        top: 50%;
+        left: calc(100% - 3px);
+        transform: translate(-100%, -50%);
+        transition: all 0.2s; }
+    form .billing p {
+      font-size: 12px;
+      font-weight: 600;
+      color: #848EAD; }
+    form .billing .yearly {
+      position: relative; }
+      form .billing .yearly::after {
+        width: 41px;
+        height: 19px;
+        border-radius: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        content: "-25%";
+        position: absolute;
+        top: 0;
+        right: -41px;
+        font-size: 10px;
+        font-weight: 800;
+        color: #FF8D68;
+        transform: translate(3px, -3px);
+        background-color: #FEEDE8; }
+  form .start-trial--div ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #848EAD; }
+    form .start-trial--div ul li:last-child {
+      margin: 0; }
+  form .start-trial--div .submit {
+    width: 170px;
+    height: 41px;
+    font-size: 12px;
+    font-weight: 800;
+    color: #BECDFF;
+    margin-top: 30px;
+    background-color: #293356;
+    border: none;
+    border-radius: 33px;
+    cursor: pointer; }
